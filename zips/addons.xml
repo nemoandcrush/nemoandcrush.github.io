@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
 
-<addon id="plugin.video.foxystreams" name="FoxyStreams" version="0.2.9" provider-name="nemoandcrush">
+<addon id="plugin.video.foxystreams" name="FoxyStreams" version="0.3.0" provider-name="nemoandcrush">
     <requires>
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
