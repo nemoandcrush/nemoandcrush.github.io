@@ -21,32 +21,6 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.inception" name="Inception" provider-name="Inception" version="0.0.1">
-    <requires>
-        <import addon="xbmc.python" version="3.0.0" />
-        <import addon="script.module.six" />
-        <import addon="script.module.kodi-six" />
-        <import addon="script.module.resolveurl" version="5.0.00" />
-        <import addon="script.module.resolveurl.xxx" version="2.0.1" />
-        <import addon="script.common.plugin.cache" />
-        <import addon="script.module.websocket" version="0.50.0" />
-        <import addon="script.module.requests" version="2.22.0+matrix.1" />
-        <import addon="script.module.beautifulsoup4" version="4.6.3+matrix.1.zip"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>Foxystreams Rarbg addon</summary>
-        <description></description>
-        <platform>all</platform>
-        <assets>
-            <icon>icon.png</icon>
-            <fanart>fanart.jpg</fanart>
-        </assets>
-	</extension>
-</addon>
-
 <addon id="plugin.video.quinnstreams" name="quinnstreams" provider-name="nemoandcrush" version="0.0.1">
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
