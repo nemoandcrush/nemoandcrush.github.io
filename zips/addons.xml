@@ -100,6 +100,25 @@
 	</extension>
 </addon>
 
+<addon id="repository.autowidget" name="AutoWidget Repository" version="1.0" provider-name="drinfernoo">
+    <extension point="xbmc.addon.repository" name="AutoWidget Repository">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/drinfernoo/plugin.program.autowidget/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/drinfernoo/plugin.program.autowidget/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/drinfernoo/plugin.program.autowidget/repo/zips/</datadir>
+        </dir>
+    </extension>
+
+    <extension point="xbmc.addon.metadata">
+        <summary>AutoWidget</summary>
+        <description>The official home of AutoWidget.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+
 <addon id="repository.jurialmunkey" name="jurialmunkey Alpha Repository" version="2.0" provider-name="jurialmunkey">
     <extension point="xbmc.addon.repository" name="jurialmunkey Alpha Repository">
         <dir minversion="18.0" maxversion="18.9.0">
@@ -168,6 +187,64 @@
 	</extension>
 </addon>
 
+<addon id="script.bingie.helper" name="Bingie Helper" version="1.1.0" provider-name="cartman.dos">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.simplejson" version="2.0.10"/>
+	</requires>
+	<extension point="xbmc.python.script" library="default.py" />
+	<extension point="xbmc.addon.metadata">
+		<language/>
+		<summary lang="en">BINGIE Helper Script</summary>
+		<description lang="en">Helper for some of BINGIE features</description>
+		<platform>all</platform>
+		<license>GPL v3.0</license>
+		<forum>https://forum.kodi.tv/showthread.php?tid=334820</forum>
+		<website></website>
+		<source>https://github.com/cartmandos/script.bingie.helper/</source>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
+
+<addon id="script.extendedinfo" name="ExtendedInfo Script" version="5.6.0+matrix.3" provider-name="phil65 (Philipp Temminghoff)">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="resource.images.studios.white" version="0.0.25"/>
+		<import addon="script.module.kodi65" version="1.2.1+matrix.3"/>
+		<import addon="script.module.routing" version="0.2.3+matrix.1"/>
+		<!-- 		<import addon="script.module.buggalo" version="1.1.6"/>-->
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.python.pluginsource" library="plugin.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<language/>
+		<summary lang="en">ExtendedInfo Script</summary>
+		<description lang="en">This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Used services are themoviedb.org, theaudiodb.org, Trakt.TV, omdbapi.com and a lot more. Needs skin implementation for lot of functions.</description>
+		<platform>all</platform>
+		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=160558</forum>
+		<source>https://github.com/phil65/script.extendedinfo</source>
+		<email>phil65@kodi.tv</email>
+		<news>Python 3 fixes by scott967.  Requires Kodi65 module version 1.2.1+matrix.1 which is also available</news>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+			<screenshot>resources/screenshot-01.jpg</screenshot>
+			<screenshot>resources/screenshot-02.jpg</screenshot>
+			<screenshot>resources/screenshot-03.jpg</screenshot>
+			<screenshot>resources/screenshot-04.jpg</screenshot>
+			<screenshot>resources/screenshot-05.jpg</screenshot>
+		</assets>
+	</extension>
+</addon>
+
 <addon id="script.module.cherrypy"
        name="CherryPy Kodi module"
        version="12.0.2"
@@ -187,6 +264,28 @@
         <source>https://github.com/marcelveldt/script.module.cherrypy</source>
         <platform>all</platform>
     </extension>
+</addon>
+
+<addon id="script.module.kodi65" name="Kodi65 Library" version="1.2.1+matrix.3" provider-name="Philipp Temminghoff (phil65)">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.youtube.dl" version="21.204.0+matrix.1"/>
+		<import addon="script.module.pil" version="5.1.0"/>
+		<import addon="script.module.autocompletion" version="2.0.2"/>
+		<import addon="script.module.requests" version="2.22.0+matrix.1"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Helper module</summary>
+		<description lang="en">Helper module for all kind of stuff</description>
+		<platform>all</platform>
+		<license>GPL-2.1</license>
+		<source>https://github.com/phil65/script.module.kodi65</source>
+		<news>Python3 ver Adjust to latest core changes, bugfixes, API extensions by scott967</news>
+	</extension>
+	<assets>
+		<icon>resources/icon.png</icon>
+	</assets>
 </addon>
 
 <addon id="script.module.metadatautils"
@@ -348,6 +447,27 @@ v1.0.25 (marcelveldt)
     </extension>
 </addon>
 
+	<addon id="script.skin.helper.backgrounds" name="Skin Helper Service Backgrounds" version="1.0.33" provider-name="marcelveldt and others">
+	<requires>
+        <import addon="script.module.simplecache" version="1.0.0"/>
+        <import addon="script.module.metadatautils" version="1.0.31"/>
+	</requires>
+
+    <extension point="xbmc.python.library" library="default.py" />
+    <extension point="xbmc.service" library="service.py" start="login" />
+
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Helper service for Kodi skins providing rotating backgrounds</summary>
+        <description>Helper service for Kodi skins providing rotating backgrounds</description>
+		<language></language>
+		<platform>all</platform>
+		<license>GPL v2.0</license>
+		<forum>http://forum.kodi.tv/showthread.php?tid=235676</forum>
+		<website></website>
+		<source>https://github.com/marcelveldt/script.skin.helper.backgrounds</source>
+	</extension>
+</addon>
+
     <addon id="script.skin.helper.service" name="Skin Helper Service" version="1.1.33" provider-name="marcelveldt and others">
     <requires>
 		<import addon="xbmc.python" version="3.0.0"/>
@@ -498,6 +618,81 @@ Version 1.0.37
         <website></website>
         <source>https://github.com/AnonTester/script.skin.helper.widgets</source>
     </extension>
+</addon>
+
+<addon id="script.tv.show.next.aired" name="TV Show - Next Aired" version="8.0.1" provider-name="WayneD,marcelveldt and others">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.thetvdb" version="1.0.29" />
+	</requires>
+	<extension point="xbmc.python.script" library="default.py">
+		<provides>executable</provides>
+	</extension>
+	<extension point="xbmc.service" library="service.py" start="login"/>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="bg">Информация за предстоящите ТВ сериали.</summary>
+		<summary lang="ca">Agafar informació de les sèries de TV que es retransmetran pròximament.</summary>
+		<summary lang="de">Erhalten Sie Infos über die nächsten Ausstrahlungstermine der Serien in Ihrer Bibliothek. </summary>
+		<summary lang="el">Λήψη πληροφοριών για την Επόμενη Προβολή των Τηλ. Σειρών</summary>
+		<summary lang="en">Get info for TV Shows Next Aired.</summary>
+		<summary lang="en_NZ">Get info for TV Shows Next Aired.</summary>
+		<summary lang="en_US">Get info for TV Shows Next Aired.</summary>
+		<summary lang="es">Obtener información de las siguientes emisiones de series.</summary>
+		<summary lang="es_MX">Obtener información de las siguientes emisiones de series.</summary>
+		<summary lang="fr">Obtenir les prochaines dates de diffusion de vos séries TV.</summary>
+		<summary lang="fr_CA">Obtenir les infos de prochaine diffusion des séries télé.</summary>
+		<summary lang="gl">Obter a info. das Seguintes Emisións das Series de TV.</summary>
+		<summary lang="he">קבל פרטי השידור הבא של תכניות הטלוויזיה.</summary>
+		<summary lang="hr">Nabavite informacije za sljedeću emitiranu TV seriju.</summary>
+		<summary lang="hu">Információ a sorozatok következő vetítési idejéről.</summary>
+		<summary lang="it">Ottieni info per le Serie TV trasmesse prossimamente.</summary>
+		<summary lang="ko">TV 쇼 방송 일정을 가져옵니다.</summary>
+		<summary lang="lt">Gauti TV laidos kitos transliacijos informaciją.</summary>
+		<summary lang="nl">Ophalen info voor komende TV afleveringen.</summary>
+		<summary lang="no">Hent informasjon om kommende TV-programmer.</summary>
+		<summary lang="pl">Pobieraj informacje o odcinkach seriali wkrótce na antenie.</summary>
+		<summary lang="pt">Obter info para Próximas Exibições de Séries TV.</summary>
+		<summary lang="pt_BR">Saiba sobre próximas exibições de séries de TV.</summary>
+		<summary lang="ro">Află despre emisiuni care urmează să fie difuzate</summary>
+		<summary lang="ru">Информация о следующих ТВ передачах.</summary>
+		<summary lang="sl">Pridobi informacije TV oddaj ki se bodo predvajale.</summary>
+		<summary lang="sv">Hämta info för nästa sändning av TV-serier.</summary>
+		<summary lang="zh">获取即将播出的剧集的信息。</summary>
+		<description lang="bg">Сваля информация за предстоящите ТВ сериали. Вече никога няма да пропускате епизод от ТВ сериали, които следите.</description>
+		<description lang="ca">Agafar informació de les sèries de TV que es retransmetran pròximament. No te'n perdràs cap mai més.</description>
+		<description lang="de">TV Show Next Aired liefert Termin-Informationen über die anstehenden Episoden der Serien aus der Datenbank. Dazu gibt es eine Wochenansicht mit allen in der nächsten Woche laufenden Episoden sowie (bei vorhandenem Skin Support) die direkte Integration der Informationen in die Ansichten des jeweiligen Skins. Sie werden nie wieder eine Folge verpassen.</description>
+		<description lang="el">Λήψη πληροφοριών για την Επόμενη Προβολή των Τηλ. Σειρών. Δε θα ξαναχάσετε επεισόδιο ποτέ.</description>
+		<description lang="en">Get info for TV Shows Next Aired. You'll never miss one again.</description>
+		<description lang="en_NZ">Get info for TV Shows Next Aired. You'll never miss one again.</description>
+		<description lang="en_US">Get info for TV Shows Next Aired. You'll never miss one again.</description>
+		<description lang="es">Obtener información de las siguientes emisiones de series. Nunca te perderás una de nuevo.</description>
+		<description lang="es_MX">Obtener información de las siguientes emisiones de series. Nunca te perderás una de nuevo.</description>
+		<description lang="fr">Ce script interroge votre médiathèque puis vas récupérer les infos sur les prochaines diffusions de vos séries. vous n'en manquerez plus aucune.</description>
+		<description lang="fr_CA">Obtenir les infos de prochaine diffusion des séries télé. Vous n'en manquerez plus jamais une.</description>
+		<description lang="gl">Obter a info. das Seguintes Emisións das Series de TV. Non esquecerá ningunha.</description>
+		<description lang="he">קבל פרטי השידור הבא של תכניות הטלוויזיה. לעולם לא תחמיץ שוב פרק.</description>
+		<description lang="hr">Nabavite informacije za sljedeću emitiranu TV seriju. Nikada nećete propustiti nijednu.</description>
+		<description lang="hu">Információ a sorozatok következő vetítési idejéről. Soha nem marad le mégegyszer semmiről.</description>
+		<description lang="it">Ottieni info per le Serie TV trasmesse prossimamente. Non ne perderai più una.</description>
+		<description lang="ko">TV 쇼 방송 일정을 가져옵니다. 놓치는 일은 절대 없을 것입니다.</description>
+		<description lang="lt">Gauti TV laidos kitos transliacijos informaciją. Jūs niekada daugiau jos nepraleisite.</description>
+		<description lang="nl">Ophalen info voor komende TV shows. Je zult ze nooit meer missen.</description>
+		<description lang="no">Få informasjon om neste TV-sending. Du vil aldri gå glipp av en episode igjen.</description>
+		<description lang="pl">Pobieraj informacje o odcinkach seriali wkrótce na antenie. Nigdy już żadnego nie przegapisz.</description>
+		<description lang="pt">Obter info para Próximas Exibições de Séries TV. Nunca mais vai perder uma.</description>
+		<description lang="pt_BR">Saiba sobre próximas exibições de séries de TV. Você nunca perderá um episódio.</description>
+		<description lang="ro">Află despre emisiuni care urmează să fie difuzate. Nu vei mai rata nici una.</description>
+		<description lang="ru">Получает информацию о следующих ТВ передачах. Теперь Вы никогда не пропустите ни одну ТВ передачу.</description>
+		<description lang="sl">Pridobi informacije TV oddaj ki se bodo predvajale. Nikoli več ne boste zamudili nobene epizode.</description>
+		<description lang="sv">Hämta info för nästa sändning av TV-Serie. Du kommer inte att missa en igen.</description>
+		<description lang="zh">获取即将播出的剧集的信息。你不会再错过好节目了。</description>
+		<language></language>
+		<platform>all</platform>
+		<license>GPL v2.0</license>
+		<forum>http://forum.xbmc.org/showthread.php?tid=186090</forum>
+		<website>http://github.com/marcelveldt/script.tv.show.next.aired</website>
+		<source>https://github.com/marcelveldt/script.tv.show.next.aired.git</source>
+	</extension>
 </addon>
 
 <addon id="skin.auramod" version="1.0.3.4" name="Aura[COLOR cyan]MOD[/COLOR]" provider-name="auramod,jurialmunkey,Cartmandos,marduklev,marcelveldt">
