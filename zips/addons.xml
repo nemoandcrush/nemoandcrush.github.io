@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+<addon id="plugin.video.f1tv" name="F1TV Kodi Plugin" version="0.1.8.1" provider-name="BBsan2k, TheDevFreak, HypnOS HAXX0R, lage2104, amverweij">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.urllib3" version="1.25.8"/>
+        <import addon="script.module.routing" version="0.2.3"/>
+        <import addon="script.module.requests" version="2.22.0"/>
+        <import addon="script.module.requests-cache" version="0.5.2"/>
+        <import addon="script.module.pyjwt" version="1.7.1"/>
+        <import addon="script.common.plugin.cache" version="2.6.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Provides functionality to view stream from F1TV</summary>
+        <description lang="en_GB">Plugin for F1TV Streaming Service</description>
+        <description lang="de_DE">Plugin für F1TV</description>
+        <language></language>
+        <platform>all</platform>
+        <license>MIT</license>
+        <forum></forum>
+        <website></website>
+        <email>bbsan2k@gmail.com</email>
+        <source></source>
+        <news></news>
+        <disclaimer></disclaimer>
+        <assets>
+            <icon>resources/F1TV_Logo.png</icon>
+            <fanart></fanart>
+        </assets>
+    </extension>
+</addon>
+
+
+<addon id="plugin.video.foxystreams" name="FoxyStreams" version="0.3.0" provider-name="nemoandcrush">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.requests" version="2.22.0+matrix.1" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Foxystreams Rarbg addon</summary>
+        <description></description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+	</extension>
+</addon>
+
+<addon id="plugin.video.quinnstreams" name="Quinn Streams" provider-name="nemoandcrush" version="0.0.2">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+        <import addon="script.module.six" />
+        <import addon="script.module.kodi-six" />
+        <import addon="script.module.resolveurl" version="5.0.00" />
+        <import addon="script.module.resolveurl.xxx" version="2.0.1" />
+        <import addon="script.common.plugin.cache" />
+        <import addon="script.module.websocket" version="0.50.0" />
+        <import addon="script.module.requests" version="2.22.0+matrix.1" />
+        <import addon="script.module.beautifulsoup4" version="4.6.3+matrix.1.zip"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>Quinn Streams addon</summary>
+        <description></description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+	</extension>
+</addon>
+
+<addon id="plugin.video.smr_link_tester" version="1.1.3" name="SMR Link Tester" provider-name="gujal">
+    <requires>
+        <!-- <import addon="xbmc.python" version="3.0.0"/> -->
+        <import addon="script.module.resolveurl"/>
+        <import addon="script.module.resolveurl.xxx"/>
+        <import addon="script.module.six" version="0.0.1"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>SMR Link Tester Addon</summary>
+        <description></description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+	</extension>
+</addon>
+
+<addon id="repository.nemoandcrush" name="nemoandcrush Repo" version="1.0" provider-name="nemoandcrush">
+    <extension point="xbmc.addon.repository" name="nemoandcrush Repository">
+        <dir>
+			<info compressed="false">https://raw.githubusercontent.com/nemoandcrush/nemoandcrush.github.io/main/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/nemoandcrush/nemoandcrush.github.io/main/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/nemoandcrush/nemoandcrush.github.io/main/zips/</datadir>
+		</dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>nemoandcrush Repo</summary>
+        <description>A repository for the things that I wanted to change. In my head I'm fixing them, results may vary. :)</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
+</addons>
