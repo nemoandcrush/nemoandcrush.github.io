@@ -11,10 +11,15 @@
 /script.module.resolveurl/
 /script.module.resolveurl.xxx/
 /script.module.routing/
+/script.module.cherrypy/
+/script.module.metadatautils/
+/script.module.musicbrainz/
+/script.module.thetvdb/
 /script.skin.helper.service/
 /script.skin.helper.skinbackup/
 /script.skin.helper.widgets/
 /script.skinshortcuts/
 /skin.arctic.zephyr.2/
 /skin.project.aura/
+/skin.auramod/
 
