@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.nemoandcrush" name="nemoandcrush Repo" version="1.0" provider-name="nemoandcrush">
+    <extension point="xbmc.addon.repository" name="nemoandcrush Repository">
+        <dir>
+			<info compressed="false">https://raw.githubusercontent.com/nemoandcrush/nemoandcrush.github.io/main/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/nemoandcrush/nemoandcrush.github.io/main/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/nemoandcrush/nemoandcrush.github.io/main/zips/</datadir>
+		</dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>nemoandcrush Repo</summary>
+        <description>A repository for the things that I wanted to change. In my head I'm fixing them, results may vary. :)</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+    </extension>
+</addon>
