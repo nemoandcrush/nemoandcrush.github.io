@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.matrix.beatmasterRS" name="BeatmasterRs Matrix Repo" version="1.1.0" provider-name="beatmasterRS">
+	<requires>
+		<import addon="xbmc.addon" version="12.0.0"/>
+	</requires>
+	<extension point="xbmc.addon.repository" name="BeatmasterRs Matrix Repo">
+		<dir minversion="18.9.0">
+			<info compressed="true">https://github.com/beatmasterRS/repository.matrix.beatmasterRS/raw/main/addons.xml</info>
+			<checksum>https://github.com/beatmasterRS/repository.matrix.beatmasterRS/raw/main/addons.xml.md5</checksum>
+			<datadir zip="true">https://github.com/beatmasterRS/repository.matrix.beatmasterRS/raw/main/</datadir>
+		</dir>	
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>BeatmasterRs Kodi repository</summary>
+		<description>Personal repository of BeatmasterRs and home of the Arctic Zephyr Matrix Mod skin</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+		<assets>
+			<icon>resources/icon.png</icon>
+			<fanart>resources/fanart.jpg</fanart>
+		</assets>
+	</extension>
+</addon>
