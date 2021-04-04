@@ -1,20 +1,22 @@
 
-<addon id="plugin.video.foxystreams" name="FoxyStreams" version="0.3.0" provider-name="nemoandcrush">
+<addon id="plugin.video.foxystreams" name="FoxyStreams" version="0.3.1" provider-name="nemoandcrush">
     <requires>
-        <import addon="xbmc.python" version="3.0.0" />
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
-        <import addon="script.module.requests" version="2.22.0+matrix.1" />
+        <import addon="script.module.requests" version="2.22.0"/>
     </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
+    <extension library="addon.py" point="xbmc.python.pluginsource">
         <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary>Foxystreams Rarbg addon</summary>
-        <description></description>
         <platform>all</platform>
+        <license>GPL 2.0</license>
+        <summary lang="en_GB">Foxystreams, the addon to stream torrent giles<</summary>
+        <description lang="en_GB">Foxystreams, the addon to stream torrent giles</description>
+        <disclaimer lang="en_GB">The author does not host or distribute any of the content displayed by this addon. The author does not have any affiliation with the sites offered</disclaimer>
         <assets>
             <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
         </assets>
-	</extension>
+    </extension>
 </addon>
